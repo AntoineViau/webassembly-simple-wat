@@ -8,7 +8,7 @@ Some low-level operations with Web Assembly and Javascript, in the browser and i
 
 ## Install, build and run
 
-You first need to install the Web Assembly Binarty Toolkit (WABT) : https://github.com/WebAssembly/wabt
+You first need to install the Web Assembly Binary Toolkit (WABT) : https://github.com/WebAssembly/wabt
 
 Install dependencies : 
 
