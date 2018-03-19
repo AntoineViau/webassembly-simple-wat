@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<script type="text/javascript" src="play-with-webassembly.js"></script>
+
+	<script type="text/javascript">
+
+		var global = {}; // Node compatibility
+
+		let importObject = createImportObject();
+
+		fetch('simple-wat.wasm')
+			.then(response => WebAssembly.instantiateStreaming(response, importObject))
+			.then(obj => {
+				playWithWebAssembly(obj.instance);
+			});
+
+	</script>
+
+</body>
+
+</html>
